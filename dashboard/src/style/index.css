@@ -1,0 +1,267 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/*  Commopn  */
+.flex {
+  display: flex;
+}
+.active li {
+  background-color: rgb(235, 233, 233);
+}
+.active .nav svg {
+  color: rgb(5, 157, 252);
+}
+a {
+  text-decoration: none;
+}
+.container {
+  align-items: stretch;
+}
+.gap-2 {
+  gap: 2rem;
+}
+/* Header */
+
+header {
+  padding: 1rem;
+  background-color: navy;
+}
+.logo-name {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+.logo-holder {
+  width: 20%;
+}
+.header-input {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  width: fit-content;
+}
+.header-input::placeholder {
+  color: white;
+}
+
+/*  Side bar */
+
+aside {
+  width: 20%;
+  background-color: rgb(240, 239, 239);
+  min-height: 100vh;
+}
+.nav-holder {
+  padding: 0.5rem;
+  background-color: rgb(255,255,255);
+}
+.nav {
+  padding: 1rem;
+  border-radius: 4px;
+  color: rgb(51, 51, 52);
+  font-size: 1.1rem;
+}
+.nav svg {
+  color: rgb(51, 51, 52);
+  margin-right: 1rem;
+}
+/*  Main */ 
+
+.main {
+  width: 80%;
+  background-color: rgb(212, 255, 255);
+  min-height: 100vh;
+
+}
+
+/* Help */ 
+.help {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+/* Articles */
+.articles {
+  padding: 1rem;
+}
+.articles-input {
+  padding: 5px 10px;
+}
+.articles-list a{
+  font-size: 1.2rem;
+  color: rgb(0, 136, 255);
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+.articles-list {
+  margin: 2rem 0;
+}
+
+/*  Page Not Found */ 
+.not-found {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20%;
+}
+
+/*  home */
+
+.home {
+  padding: 1rem;
+}
+.home-heading {
+  font-size: 1.5rem;
+}
+.home-nave-holder {
+  justify-content: space-around;
+}
+.home-nav {
+  padding: 2rem 8rem 2rem 1rem;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  color: rgb(5, 89, 179);
+  font-weight: 600;
+  box-shadow: 0 0 10px rgb(185, 184, 184);
+}
+
+/* Book */ 
+
+.books-holder {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.single-book {
+  flex: 0 1 32%;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 0rem;
+  padding: 2rem;
+}
+.book-img {
+  width: 150px;
+  height: 200px;
+}
+.book-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1.3rem 0;
+  line-height: 23px;
+}
+.buy-now {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  background-color: teal;
+  width: fit-content;
+  margin: 1.5rem auto 0 auto;
+  color: white;
+  border-radius: 5px;
+}
+
+/* People */
+
+.people-holder {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.single-person {
+  flex: 0 1 32%;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 0rem;
+  padding: 2rem;
+}
+.person-img-holder {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.person-img {
+  border-radius: 50%;
+  border: 2px solid teal;
+}
+.person-title {
+  font-weight: 700;
+}
+.person-description {
+  font-size: 0.9rem;
+}
+
+/* Article */ 
+
+.article-holder {
+  padding: 1rem;
+}
+.slug {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
