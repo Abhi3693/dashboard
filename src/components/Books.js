@@ -39,7 +39,7 @@ class Books extends React.Component {
 function Book(props) {
   return (
     <li className="single-book">
-        <img className="book-img" src={props.image} />
+        <img className="book-img" src={props.image} alt={props.title} />
         <h2 className="book-title">{props.title}</h2>
         <span className="book-author">{props.author}</span>
         <a className="buy-now" href={props.website}>Buy Now</a>

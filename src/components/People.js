@@ -45,7 +45,7 @@ function SinglePerson(props) {
   return (
     <li className="single-person">
         <div className="person-img-holder flex gap-2">
-          <img className="person-img" src={props.image} />
+          <img className="person-img" src={props.image} alt={props.name} />
           <h2 className="person-title">{props.name}</h2>
         </div>
         <h3 className="person-description">{props.description}</h3>
